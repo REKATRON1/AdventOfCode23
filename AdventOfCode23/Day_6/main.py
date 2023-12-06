@@ -83,7 +83,7 @@ def both_parts(races):
         if len(matching_record_times) == 2:
             matching_record_times_round_inwards = [int(np.ceil(matching_record_times[0])), int(np.floor(matching_record_times[1]))]
             #No need for accounting sols being outside the definition-range bcs these distances would be negative
-            product_amount_record_beating_times *= len(list(range(matching_record_times_round_inwards[0], matching_record_times_round_inwards[1]+1)))
+            product_amount_record_beating_times *= (matching_record_times_round_inwards[1]+1-matching_record_times_round_inwards[0])
         else:
             product_amount_record_beating_times *= 0
             #Cannot be anything else but 0 bcs a*0=0
