@@ -48,7 +48,7 @@ def input_conversion_part2(inp):
 import numpy as np
 def quadratic_roots(factors):
     """
-    Calculates roots of quadratic polynomial.
+    Calculates roots of normalized (a=1) quadratic polynomial.
     factors: [c, b, a] := ax^2+bx+c=0
     """
     D = (factors[1]/2)**2-factors[0]
