@@ -55,6 +55,7 @@ def quadratic_roots(factors):
     if D > 0:
         d_sqrt = np.sqrt(D)
         sols = [-factors[1]/2-d_sqrt, -factors[1]/2+d_sqrt]
+        #sols[1]>sols[0]
     elif D == 0:
         sols = [-factors[1]/2]
     else:
